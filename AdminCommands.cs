@@ -18,7 +18,7 @@ namespace CobainSaver
 {
     internal class AdminCommands
     {
-        static string jsonString = System.IO.File.ReadAllText("./source.json");
+        static string jsonString = System.IO.File.ReadAllText("source.json");
         static JObject jsonObjectAPI = JObject.Parse(jsonString);
 
         static string torProxyUrl = jsonObjectAPI["Proxy"][3].ToString();
@@ -36,7 +36,7 @@ namespace CobainSaver
         private static readonly HttpClient client = new HttpClient(handler);
         public async Task CountAllUsers(string date, string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -66,7 +66,7 @@ namespace CobainSaver
         }
         public async Task CountAllLinks(string date, string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -104,7 +104,7 @@ namespace CobainSaver
         }
         public async Task CountBotLinks(string date, string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -142,7 +142,7 @@ namespace CobainSaver
         }
         public async Task CountUniqUsers(string date, string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -171,7 +171,7 @@ namespace CobainSaver
         }
         public async Task CountUniqChats(string date, string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -200,7 +200,7 @@ namespace CobainSaver
         }
         public async Task ServiceStatistic(string chatId, Update update, CancellationToken cancellationToken, TelegramBotClient botClient)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectAPI = JObject.Parse(jsonString);
 
             if (chatId == jsonObjectAPI["AdminId"][0].ToString())
@@ -229,7 +229,7 @@ namespace CobainSaver
         }
         public async Task ServiceBotStatistic(string chatId, Update update, CancellationToken cancellationToken, TelegramBotClient botClient)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectAPI = JObject.Parse(jsonString);
 
             if (chatId == jsonObjectAPI["AdminId"][0].ToString())
@@ -270,7 +270,7 @@ namespace CobainSaver
             };
             HttpClient httpClient = new HttpClient(httpHandler);
 
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectAPI = JObject.Parse(jsonString);
 
             if (chatId == jsonObjectAPI["AdminId"][0].ToString())
@@ -328,7 +328,7 @@ namespace CobainSaver
         }
         public async Task LanguageStatistics(string chatId, Update update, CancellationToken cancellationToken, TelegramBotClient botClient)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectAPI = JObject.Parse(jsonString);
 
             if (chatId == jsonObjectAPI["AdminId"][0].ToString())
@@ -359,7 +359,7 @@ namespace CobainSaver
         {
             try
             {
-                string jsonString = System.IO.File.ReadAllText("./source.json");
+                string jsonString = System.IO.File.ReadAllText("source.json");
                 JObject jsonObjectAPI = JObject.Parse(jsonString);
 
                 if (chatId == jsonObjectAPI["AdminId"][0].ToString())
@@ -433,7 +433,7 @@ namespace CobainSaver
         }
         public async Task SendAllRewies(string chatId, Update update, CancellationToken cancellationToken, string date, TelegramBotClient botClient)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -493,7 +493,7 @@ namespace CobainSaver
                 UseCookies = false
             };
             HttpClient httpClient = new HttpClient(httpHandler);
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectCheck = JObject.Parse(jsonString);
             if (chatId == jsonObjectCheck["AdminId"][0].ToString())
             {
@@ -564,7 +564,7 @@ namespace CobainSaver
                 UseCookies = false
             };
             HttpClient httpClient = new HttpClient(httpHandler);
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObjectCheck = JObject.Parse(jsonString);
             if (chatId == jsonObjectCheck["AdminId"][0].ToString())
             {
@@ -610,7 +610,7 @@ namespace CobainSaver
         }
         public async Task SendServerLogs(string chatId, Update update, CancellationToken cancellationToken, string messageText, TelegramBotClient botClient, string cobain)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (chatId == jsonObject["AdminId"][0].ToString())
             {
@@ -693,7 +693,7 @@ namespace CobainSaver
         public async Task AddUserAds(TelegramBotClient botClient, string chatId ,string adminId)
         {
             AddToDataBase addToDataBase = new AddToDataBase();
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (adminId == jsonObject["AdminId"][0].ToString())
             {
@@ -706,7 +706,7 @@ namespace CobainSaver
         public async Task ChangeUserAds(TelegramBotClient botClient, int id, string newName, string newMessage, bool newIsActive, bool newIsActiveAdmin, string newEndDate, string adminId, Message msg)
         {
             AddToDataBase addToDataBase = new AddToDataBase();
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (adminId == jsonObject["AdminId"][0].ToString())
             {
@@ -735,7 +735,7 @@ namespace CobainSaver
         }
         public async Task EditEndDate(TelegramBotClient botClient, int id, string endDate, string adminId)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (adminId == jsonObject["AdminId"][0].ToString())
             {
@@ -764,7 +764,7 @@ namespace CobainSaver
         }
         public async Task EditIsActiveAdmin(TelegramBotClient botClient, int id, bool isActiveAdmin, string adminId)
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             if (adminId == jsonObject["AdminId"][0].ToString())
             {

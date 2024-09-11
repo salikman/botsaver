@@ -28,7 +28,7 @@ namespace CobainSaver
 
         static async Task Main()
         {
-            string jsonString = System.IO.File.ReadAllText("./source.json");
+            string jsonString = System.IO.File.ReadAllText("source.json");
             JObject jsonObject = JObject.Parse(jsonString);
             var botClient = new TelegramBotClient(jsonObject["BotAPI"][0].ToString());
             _receiverOptions = new ReceiverOptions // Также присваем значение настройкам бота
