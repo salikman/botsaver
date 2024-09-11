@@ -21,7 +21,7 @@ namespace CobainSaver.Downloader
 {
     internal class TikTok
     {
-        static string jsonString = System.IO.File.ReadAllText("../source.json");
+        static string jsonString = System.IO.File.ReadAllText("source.json");
         static JObject jsonObjectAPI = JObject.Parse(jsonString);
 
         private static readonly HttpClient client = new HttpClient();
@@ -33,7 +33,7 @@ namespace CobainSaver.Downloader
 
                 AddToDataBase addDB = new AddToDataBase();
 
-                string jsonString = System.IO.File.ReadAllText("../source.json");
+                string jsonString = System.IO.File.ReadAllText("source.json");
                 JObject jsonObjectAPI = JObject.Parse(jsonString);
                 string normallMsg = await DeleteNotUrl(messageText);
                 var values = new Dictionary<string, string>
@@ -290,7 +290,7 @@ namespace CobainSaver.Downloader
 
                 AddToDataBase addDB = new AddToDataBase();
 
-                string jsonString = System.IO.File.ReadAllText("../source.json");
+                string jsonString = System.IO.File.ReadAllText("source.json");
                 JObject jsonObjectAPI = JObject.Parse(jsonString);
                 string normallMsg = await DeleteNotUrl(messageText);
                 var values = new Dictionary<string, string>
@@ -557,7 +557,7 @@ namespace CobainSaver.Downloader
             {
                 Ads ads = new Ads();
                 AddToDataBase addDB = new AddToDataBase();
-                string jsonString = System.IO.File.ReadAllText("../source.json");
+                string jsonString = System.IO.File.ReadAllText("source.json");
                 JObject jsonObjectAPI = JObject.Parse(jsonString);
 
                 string url = await DeleteNotUrl(messageText);
@@ -809,7 +809,7 @@ namespace CobainSaver.Downloader
             {
                 Ads ads = new Ads();
                 AddToDataBase addDB = new AddToDataBase();
-                string jsonString = System.IO.File.ReadAllText("../source.json");
+                string jsonString = System.IO.File.ReadAllText("source.json");
                 JObject jsonObjectAPI = JObject.Parse(jsonString);
 
                 string url = await DeleteNotUrl(messageText);
