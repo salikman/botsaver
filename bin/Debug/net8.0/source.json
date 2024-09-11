@@ -1,0 +1,43 @@
+{
+  "BotAPI": [
+    "7543931919:AAElLIwI1UzlUx36gd-gEHxCpMd5XYydt-s"
+  ],
+  "TTAPI": [
+    "https://www.tikwm.com/api/",
+    "https://api16-normal-c-useast1a.tiktokv.com/aweme/v1/feed/?aweme_id="
+  ],
+  "RedditAPI": [
+    "https://api.reddit.com/api/info/?id=t3_"
+  ],
+  "XAPI": [
+    "https://api.vxtwitter.com/Twitter/status/"
+  ],
+  "InstagramAPI": [
+    "https://instagram-downloader-download-instagram-videos-stories1.p.rapidapi.com/get-info-rapidapi?url=",
+    "8e8c283daamshd048804318143aap14643djsn44832f33569c",
+    "instagram-downloader-download-instagram-videos-stories1.p.rapidapi.com"
+  ],
+  "Spotify": [
+    "clientId",
+    "clientSecret"
+  ],
+  "AdminId": [
+    "331075928"
+  ],
+  "ffmpegPath": [
+    "C:\\ffmpeg\\bin\\ffmpeg.exe",
+    "C:\\ffmpeg\\bin\\yt-dlp.exe"
+  ],
+  "Proxy": [
+    "Proxy for reddit, if you need",
+    "Proxy host",
+    "Proxy key",
+    "http://127.0.0.1:1881"
+  ],
+  "SqlConnection": [
+    "Host=localhost;Port=5432;Database=TestServer;Username=postgres;Password=admin"
+  ],
+  "LogsChannelId": [
+    "ChannelId"
+  ]
+}
