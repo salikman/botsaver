@@ -35,7 +35,7 @@
     "http://127.0.0.1:1881"
   ],
   "SqlConnection": [
-    "Host=localhost;Port=5432;Database=TestServer;Username=postgres;Password=admin"
+    "Host=localhost;Port=5432;Database=mydatabase;Username=admin;Password=130690"
   ],
   "LogsChannelId": [
     "ChannelId"
